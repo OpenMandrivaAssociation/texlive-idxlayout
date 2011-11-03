@@ -1,3 +1,9 @@
+# revision 19194
+# category Package
+# catalog-ctan /macros/latex/contrib/idxlayout
+# catalog-date 2010-06-27 17:16:06 +0200
+# catalog-license lppl
+# catalog-version 0.4c
 Name:		texlive-idxlayout
 Version:	0.4c
 Release:	1
@@ -47,6 +53,7 @@ memoir classes.
 #- source
 %doc %{_texmfdistdir}/source/latex/idxlayout/idxlayout.dtx
 %doc %{_texmfdistdir}/source/latex/idxlayout/idxlayout.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -57,3 +64,5 @@ memoir classes.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
