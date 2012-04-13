@@ -1,12 +1,12 @@
-# revision 19194
+# revision 25821
 # category Package
 # catalog-ctan /macros/latex/contrib/idxlayout
-# catalog-date 2010-06-27 17:16:06 +0200
+# catalog-date 2012-04-01 20:39:12 +0200
 # catalog-license lppl
-# catalog-version 0.4c
+# catalog-version 0.4d
 Name:		texlive-idxlayout
-Version:	0.4c
-Release:	2
+Version:	0.4d
+Release:	1
 Summary:	Configurable index layout, responsive to KOMA-Script and memoir
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/idxlayout
