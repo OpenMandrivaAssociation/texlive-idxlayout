@@ -53,3 +53,21 @@ memoir classes.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Fri Apr 13 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.4d-1
++ Revision: 790626
+- Update to latest release.
+
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.4c-2
++ Revision: 752685
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.4c-1
++ Revision: 718693
+- texlive-idxlayout
+- texlive-idxlayout
+- texlive-idxlayout
+- texlive-idxlayout
+
