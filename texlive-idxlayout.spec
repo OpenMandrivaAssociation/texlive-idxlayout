@@ -6,7 +6,7 @@
 # catalog-version 0.4d
 Name:		texlive-idxlayout
 Version:	0.4d
-Release:	2
+Release:	3
 Summary:	Configurable index layout, responsive to KOMA-Script and memoir
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/idxlayout
