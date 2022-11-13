@@ -1,19 +1,13 @@
-# revision 25821
-# category Package
-# catalog-ctan /macros/latex/contrib/idxlayout
-# catalog-date 2012-04-01 20:39:12 +0200
-# catalog-license lppl
-# catalog-version 0.4d
 Name:		texlive-idxlayout
-Version:	0.4d
-Release:	10
+Version:	25821
+Release:	1
 Summary:	Configurable index layout, responsive to KOMA-Script and memoir
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/idxlayout
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/idxlayout.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/idxlayout.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/idxlayout.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/idxlayout.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/idxlayout.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/idxlayout.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -28,12 +22,12 @@ index-related options and commands of the KOMA-Script and
 memoir classes.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -46,28 +40,11 @@ memoir classes.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Fri Apr 13 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.4d-1
-+ Revision: 790626
-- Update to latest release.
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.4c-2
-+ Revision: 752685
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.4c-1
-+ Revision: 718693
-- texlive-idxlayout
-- texlive-idxlayout
-- texlive-idxlayout
-- texlive-idxlayout
-
