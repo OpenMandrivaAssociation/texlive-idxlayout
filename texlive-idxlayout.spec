@@ -1,6 +1,6 @@
 Name:		texlive-idxlayout
 Version:	25821
-Release:	1
+Release:	2
 Summary:	Configurable index layout, responsive to KOMA-Script and memoir
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/idxlayout
