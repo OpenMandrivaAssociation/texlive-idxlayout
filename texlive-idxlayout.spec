@@ -3,7 +3,7 @@ Version:	25821
 Release:	2
 Summary:	Configurable index layout, responsive to KOMA-Script and memoir
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/idxlayout
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/idxlayout
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/idxlayout.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/idxlayout.doc.r%{version}.tar.xz
